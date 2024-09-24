@@ -18,7 +18,7 @@ var loader = new THREE.FontLoader();
 loader.load('https://threejs.org/examples/fonts/helvetiker_regular.typeface.json', function (font) {
     var textGeometry = new THREE.TextGeometry('Arteske', {
         font: font,
-        size: 6,  // Tamaño del texto
+        size: 4,  // Tamaño del texto
         height: 1, // Profundidad del texto
         curveSegments: 12,
         bevelEnabled: true,
@@ -82,8 +82,8 @@ loader.load('https://threejs.org/examples/fonts/helvetiker_regular.typeface.json
         requestAnimationFrame(animate);
 
         // Rotación del texto
-        textMesh.rotation.x += 0.05;
-        textMesh.rotation.y += 0.05;
+        textMesh.rotation.x += 0.02;
+        textMesh.rotation.y += 0.02;
 
         // Generar nuevos fuegos artificiales de forma periódica
         if (Math.random() < 0.05) {
